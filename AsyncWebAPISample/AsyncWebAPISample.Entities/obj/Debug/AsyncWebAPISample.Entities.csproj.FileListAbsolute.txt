@@ -1,0 +1,5 @@
+C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Entities\bin\Debug\AsyncWebAPISample.Entities.dll
+C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Entities\bin\Debug\AsyncWebAPISample.Entities.pdb
+C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Entities\obj\Debug\AsyncWebAPISample.Entities.dll
+C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Entities\obj\Debug\AsyncWebAPISample.Entities.pdb
+C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Entities\obj\Debug\AsyncWebAPISample.Entities.csprojResolveAssemblyReference.cache
