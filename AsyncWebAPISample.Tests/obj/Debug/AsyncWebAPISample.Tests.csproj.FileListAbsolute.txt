@@ -1,1 +1,0 @@
-C:\Development\Web\WebApI\AsyncWebAPISample.Tests\obj\Debug\AsyncWebAPISample.Tests.csprojResolveAssemblyReference.cache
