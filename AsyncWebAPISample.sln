@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWebAPISample", "AsyncWebAPISample\AsyncWebAPISample.csproj", "{C18A9CC0-2016-4A2A-AE16-502EA646D372}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWebAPISample.Entities", "AsyncWebAPISample\AsyncWebAPISample.Entities\AsyncWebAPISample.Entities.csproj", "{AEE4EBD6-2BFC-4493-BCD8-34C653052CAF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{ADB25079-864B-41A7-AAFA-352137BA6707}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -14,9 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{ADB250
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWebAPISample.Data", "AsyncWebAPISample\AsyncWebAPISample.Data\AsyncWebAPISample.Data.csproj", "{C75106B9-577F-4C88-A80C-78BCEB7542B1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWebAPISample.Tests", "AsyncWebAPISample.Tests\AsyncWebAPISample.Tests.csproj", "{71B1913E-5712-4B1E-9D75-7BDED4549551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWebAPISample.Entities", "AsyncWebAPISample.Entities\AsyncWebAPISample.Entities.csproj", "{AEE4EBD6-2BFC-4493-BCD8-34C653052CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWebAPISample.Data", "AsyncWebAPISample.Data\AsyncWebAPISample.Data.csproj", "{C75106B9-577F-4C88-A80C-78BCEB7542B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +28,10 @@ Global
 		{C18A9CC0-2016-4A2A-AE16-502EA646D372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C18A9CC0-2016-4A2A-AE16-502EA646D372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C18A9CC0-2016-4A2A-AE16-502EA646D372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AEE4EBD6-2BFC-4493-BCD8-34C653052CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AEE4EBD6-2BFC-4493-BCD8-34C653052CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEE4EBD6-2BFC-4493-BCD8-34C653052CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,10 +40,6 @@ Global
 		{C75106B9-577F-4C88-A80C-78BCEB7542B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C75106B9-577F-4C88-A80C-78BCEB7542B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C75106B9-577F-4C88-A80C-78BCEB7542B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71B1913E-5712-4B1E-9D75-7BDED4549551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

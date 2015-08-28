@@ -79,17 +79,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AsyncWebAPISample\AsyncWebAPISample.csproj">
-      <Project>{C18A9CC0-2016-4A2A-AE16-502EA646D372}</Project>
-      <Name>AsyncWebAPISample</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AsyncWebAPISample\AsyncWebAPISample.Data\AsyncWebAPISample.Data.csproj">
+    <ProjectReference Include="..\AsyncWebAPISample.Data\AsyncWebAPISample.Data.csproj">
       <Project>{c75106b9-577f-4c88-a80c-78bceb7542b1}</Project>
       <Name>AsyncWebAPISample.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AsyncWebAPISample\AsyncWebAPISample.Entities\AsyncWebAPISample.Entities.csproj">
+    <ProjectReference Include="..\AsyncWebAPISample.Entities\AsyncWebAPISample.Entities.csproj">
       <Project>{aee4ebd6-2bfc-4493-bcd8-34c653052caf}</Project>
       <Name>AsyncWebAPISample.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AsyncWebAPISample\AsyncWebAPISample.csproj">
+      <Project>{C18A9CC0-2016-4A2A-AE16-502EA646D372}</Project>
+      <Name>AsyncWebAPISample</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

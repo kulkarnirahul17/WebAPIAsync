@@ -111,11 +111,11 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AsyncWebAPISample.Data\AsyncWebAPISample.Data.csproj">
+    <ProjectReference Include="..\AsyncWebAPISample.Data\AsyncWebAPISample.Data.csproj">
       <Project>{c75106b9-577f-4c88-a80c-78bceb7542b1}</Project>
       <Name>AsyncWebAPISample.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="AsyncWebAPISample.Entities\AsyncWebAPISample.Entities.csproj">
+    <ProjectReference Include="..\AsyncWebAPISample.Entities\AsyncWebAPISample.Entities.csproj">
       <Project>{aee4ebd6-2bfc-4493-bcd8-34c653052caf}</Project>
       <Name>AsyncWebAPISample.Entities</Name>
     </ProjectReference>
