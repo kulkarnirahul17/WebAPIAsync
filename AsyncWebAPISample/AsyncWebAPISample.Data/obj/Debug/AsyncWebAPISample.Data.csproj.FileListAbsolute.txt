@@ -1,7 +1,7 @@
-C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Data.dll
-C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Data.pdb
-C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Entities.dll
-C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Entities.pdb
-C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Data\obj\Debug\AsyncWebAPISample.Data.dll
-C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Data\obj\Debug\AsyncWebAPISample.Data.pdb
-C:\Development\Web\AsyncWebAPISample\AsyncWebAPISample.Data\obj\Debug\AsyncWebAPISample.Data.csprojResolveAssemblyReference.cache
+C:\Development\Web\WebApI\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Data.dll
+C:\Development\Web\WebApI\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Data.pdb
+C:\Development\Web\WebApI\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Entities.dll
+C:\Development\Web\WebApI\AsyncWebAPISample\AsyncWebAPISample.Data\bin\Debug\AsyncWebAPISample.Entities.pdb
+C:\Development\Web\WebApI\AsyncWebAPISample\AsyncWebAPISample.Data\obj\Debug\AsyncWebAPISample.Data.csprojResolveAssemblyReference.cache
+C:\Development\Web\WebApI\AsyncWebAPISample\AsyncWebAPISample.Data\obj\Debug\AsyncWebAPISample.Data.dll
+C:\Development\Web\WebApI\AsyncWebAPISample\AsyncWebAPISample.Data\obj\Debug\AsyncWebAPISample.Data.pdb

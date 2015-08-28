@@ -8,8 +8,8 @@ namespace AsyncWebAPISample.Data
 {
 	public interface IProductRepository
 	{
-		IEnumerable<IProduct> GetAll();
+		IEnumerable<Product> GetAll();
 
-		IProduct GetById(long id);
+		Product GetById(long id);
 	}
 }

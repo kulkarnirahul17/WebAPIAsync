@@ -32,11 +32,13 @@ namespace AsyncWebAPISample.Tests
 		}
 
 		[TestMethod]
-		public void Can_Get_Product_By_Id()
+		public void Get_Product_By_Id_Returns_Product_With_The_Same_Id()
 		{
-			long id = 1;
-			var result = _controller.GetById(id);
+			long id = 23;
+			_mockProductRepository.Setup(repo => repo.GetById(id)).Returns(Moq.It.Is<Product>(x=> x.Id == id));
 
+			var result = _controller.GetById(id);
+			_mockProductRepository.VerifyAll();
 		}
 	}
 }

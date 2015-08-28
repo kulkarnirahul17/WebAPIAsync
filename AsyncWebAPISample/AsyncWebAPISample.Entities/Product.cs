@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AsyncWebAPISample.Entities
 {
-	public class Product : IProduct
+	public class Product 
 	{
+		public long Id { get; set; }
+
 	}
 }
