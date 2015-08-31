@@ -22,6 +22,7 @@ namespace AsyncWebAPISample.Tests
 			_controller = new ProductsController(_mockProductRepository.Object);
 		}
 
+		[TestCategory("Unit")]
 		[TestMethod]
 		public void Can_Get_All_Products()
 		{
@@ -31,6 +32,7 @@ namespace AsyncWebAPISample.Tests
 			_mockProductRepository.Verify(x => x.GetAll(), Times.Once);
 		}
 
+		[TestCategory("Unit")]
 		[TestMethod]
 		public void Get_Product_By_Id_Returns_Product_With_The_Same_Id()
 		{

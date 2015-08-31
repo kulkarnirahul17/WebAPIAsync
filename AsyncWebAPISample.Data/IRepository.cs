@@ -6,8 +6,10 @@ using System.Text;
 
 namespace AsyncWebAPISample.Data
 {
-	public interface IProductRepository : IRepository<Product>
+	public interface IRepository<T>
 	{
-		
+		IEnumerable<T> GetAll();
+
+		T GetById(long id);
 	}
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using AsyncWebAPISample.Entities;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
@@ -10,8 +12,8 @@ namespace AsyncWebAPISample.Data.EntityFramework
 {
 	public class DefaultContext : DbContext
 	{
-		public DefaultContext(string nameOrConnectionString)
-			:base(nameOrConnectionString)
+		public DefaultContext(string connectionString)
+			:base(ConfigurationManager.ConnectionStrings[connectionString].ConnectionString )
 		{
 
 		}
@@ -20,5 +22,7 @@ namespace AsyncWebAPISample.Data.EntityFramework
 		{
 			base.OnModelCreating(modelBuilder);
 		}
+
+		public DbSet<Product> Products { get; set; }
 	}
 }

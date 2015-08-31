@@ -1,22 +1,19 @@
 ﻿using AsyncWebAPISample.Data;
+using AsyncWebAPISample.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AsyncWebAPISample.Data.EntityFramework
 {
-	public class ProductRepository : IProductRepository
+	public class ProductRepository : EntityFrameworkRepository<Product>, IProductRepository
 	{
-		public IEnumerable<AsyncWebAPISample.Entities.Product> GetAll()
+		public ProductRepository(DbContext context) : base (context)
 		{
-			throw new NotImplementedException();
-		}
-
-		public AsyncWebAPISample.Entities.Product GetById(long id)
-		{
-			throw new NotImplementedException();
+			
 		}
 	}
 }
