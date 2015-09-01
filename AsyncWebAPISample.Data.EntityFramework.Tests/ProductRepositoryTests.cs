@@ -9,12 +9,13 @@ namespace AsyncWebAPISample.Data.EntityFramework.Tests
 	[TestClass]
 	public class ProductRepositoryTests
 	{
-		private IProductRepository _productRepository;
-
+		private  IProductRepository _productRepository;
+		
 		[TestInitialize]
 		public void TestInit()
 		{
-			_productRepository = DefaultFactory<IProductRepository>.Default.Resolve();
+			_productRepository = _productRepository ?? DefaultFactory<IProductRepository>.Default.Resolve();
+
 			if (_productRepository == null)
 				throw new AssertFailedException("Test Intitialization Failed");
 		}
@@ -30,7 +31,7 @@ namespace AsyncWebAPISample.Data.EntityFramework.Tests
 
 		[TestCategory("Integration")]
 		[TestMethod]
-		public void ProductRepository_GetById_Returns_Null_When_Id_Does_Not()
+		public void ProductRepository_GetById_Returns_Null_When_Id_Does_Not_Exist()
 		{
 			var id = long.MaxValue;
 			var result = _productRepository.GetById(id);
