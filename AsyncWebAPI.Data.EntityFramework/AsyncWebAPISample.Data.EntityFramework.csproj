@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="DefaultContext.cs" />
     <Compile Include="EntityFrameworkRepository.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

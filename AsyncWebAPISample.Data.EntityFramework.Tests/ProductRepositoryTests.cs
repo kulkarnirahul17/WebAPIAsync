@@ -24,8 +24,17 @@ namespace AsyncWebAPISample.Data.EntityFramework.Tests
 		public void ProductRepository_GetAll()
 		{
 			var result = _productRepository.GetAll();
-			if(result !=null)
+			if (result != null)
 				Assert.IsInstanceOfType(result, typeof(IEnumerable<Product>));
+		}
+
+		[TestCategory("Integration")]
+		[TestMethod]
+		public void ProductRepository_GetById_Returns_Null_When_Id_Does_Not()
+		{
+			var id = long.MaxValue;
+			var result = _productRepository.GetById(id);
+			Assert.IsNull(result);
 		}
 	}
 }

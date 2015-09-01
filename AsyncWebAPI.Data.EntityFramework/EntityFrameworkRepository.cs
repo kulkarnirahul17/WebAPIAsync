@@ -21,12 +21,13 @@ namespace AsyncWebAPISample.Data.EntityFramework
 
 		public virtual IEnumerable<T> GetAll()
 		{
-			return _dbSet;
+			return _dbSet as IEnumerable<T>;
 		}
 
 		public virtual T GetById(long id)
 		{
-			throw new NotImplementedException();
+			var entry = _dbSet.Find(id);
+			return entry;
 		}
 	}
 }
