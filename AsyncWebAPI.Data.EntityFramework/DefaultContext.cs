@@ -12,7 +12,7 @@ namespace AsyncWebAPISample.Data.EntityFramework
 {
 	public class DefaultContext : DbContext
 	{
-		public DefaultContext() : base("ProductsB") { }
+		public DefaultContext() : base("ProductsDB") { }
 
 		public DefaultContext(string connectionString)
 			: base(ConfigurationManager.ConnectionStrings[connectionString].ConnectionString)

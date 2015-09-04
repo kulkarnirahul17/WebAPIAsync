@@ -6,10 +6,16 @@ using System.Text;
 
 namespace AsyncWebAPISample.Data
 {
-	public interface IRepository<T>
+	public interface IRepository<TItem, TId>
 	{
-		IEnumerable<T> GetAll();
+		IEnumerable<TItem> GetAll();
 
-		T GetById(long id);
+		TItem GetById(TId id);
+
+		void Add(TItem item);
+
+		void SaveChanges();
+
+		void AbortChanges();
 	}
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AsyncWebAPISample.Data.EntityFramework
 {
-	public class ProductRepository : EntityFrameworkRepository<Product>, IProductRepository
+	public class ProductRepository : EntityFrameworkRepository<Product, long>, IProductRepository
 	{
 		public ProductRepository(DbContext context) : base (context)
 		{

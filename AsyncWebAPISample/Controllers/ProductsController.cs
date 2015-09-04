@@ -13,10 +13,15 @@ namespace AsyncWebAPISample.Controllers
 	{
 		private IProductRepository _productRepository;
 
+		public ProductsController()
+		{
+			_productRepository = AsyncWebAPI.Factory.DefaultFactory<IProductRepository>.Default.Resolve();
+		}
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ProductsController"/> class.
 		/// </summary>
-		/// <param name="productRepository">The product repository.</param>
+		/// <param name="productRepository">The product repository.</param>		
 		public ProductsController(IProductRepository productRepository)
 		{
 			_productRepository = productRepository;
@@ -28,12 +33,13 @@ namespace AsyncWebAPISample.Controllers
 		/// <returns></returns>
 		/// <exception cref="InvalidOperationException">Product repository is null</exception>
 		// api/Products/
-		public IEnumerable<Product> GetAll()
+		[Route("api/products")]
+		public IHttpActionResult GetAll()
 		{
 			if (_productRepository == null)
 				throw new InvalidOperationException("Product repository is null");
 
-			return _productRepository.GetAll();
+			return Ok(_productRepository.GetAll());
 		}
 
 		/// <summary>
@@ -43,12 +49,22 @@ namespace AsyncWebAPISample.Controllers
 		/// <returns></returns>
 		/// <exception cref="InvalidOperationException">Product repository is null</exception>
 		// api/Products/5
-		public object GetById(long id)
+		[Route("api/products/{id}")]
+		public IHttpActionResult GetById(long id)
 		{
 			if (_productRepository == null)
 				throw new InvalidOperationException("Product repository is null");
 
-			return _productRepository.GetById(id);
+			return Ok(_productRepository.GetById(id));
+		}
+
+		[Route("api/products")]
+		[HttpPost]
+		public IHttpActionResult AddProduct([FromBody] Product product)
+		{
+			_productRepository.Add(product);
+			_productRepository.SaveChanges();
+			return Ok();
 		}
 	}
 }

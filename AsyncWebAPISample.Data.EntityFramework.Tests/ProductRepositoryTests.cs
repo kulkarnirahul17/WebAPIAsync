@@ -37,5 +37,24 @@ namespace AsyncWebAPISample.Data.EntityFramework.Tests
 			var result = _productRepository.GetById(id);
 			Assert.IsNull(result);
 		}
+
+		[TestCategory("Integration")]
+		[TestMethod]
+		[ExpectedException(typeof(ArgumentNullException))]
+		public void ProductRepository_add_throws_ArgumentNullException_when_item_is_null()
+		{
+			_productRepository.Add(null);
+		}
+
+		[TestCategory("Integration")]
+		[TestMethod]		
+		public void ProductRepository_add_does_not_throw_exception()
+		{
+			_productRepository.Add(new Product()
+			{
+				Name = "Product 1"
+			});
+		}
+
 	}
 }
