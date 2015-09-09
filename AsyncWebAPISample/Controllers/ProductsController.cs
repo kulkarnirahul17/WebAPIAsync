@@ -38,8 +38,10 @@ namespace AsyncWebAPISample.Controllers
 		{
 			if (_productRepository == null)
 				throw new InvalidOperationException("Product repository is null");
+			var products = _productRepository.GetAll();
 
-			return Ok(_productRepository.GetAll());
+			
+			return Ok(products);
 		}
 
 		/// <summary>
